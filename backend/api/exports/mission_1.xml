@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mission xmlns="https://beebloom.local/schema/mission" version="1.0">
+  <Id>1</Id>
+  <Titulo>Prueba de misión en castellano</Titulo>
+  <Estado>borrador</Estado>
+  <Precio>60.00</Precio>
+  <Pago>
+    <Estado>pagado</Estado>
+    <Metodo>transferencia</Metodo>
+    <Fecha>2025-11-01T20:19:00.000Z</Fecha>
+  </Pago>
+  <Fechas>
+    <Inicio>2025-11-10T09:00:00.000Z</Inicio>
+    <Fin>2025-11-10T10:00:00.000Z</Fin>
+  </Fechas>
+  <Dron>
+    <Id>1</Id>
+    <Nombre>DJI Agri-01</Nombre>
+    <Serial>AGRI-0001</Serial>
+    <Estado>disponible</Estado>
+  </Dron>
+  <Parcela>
+    <Id>1</Id>
+    <Nombre>Parcela Norte</Nombre>
+    <Estado>activa</Estado>
+  </Parcela>
+  <Notas></Notas>
+</Mission>

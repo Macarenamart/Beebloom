@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://beebloom.local/schema/mission"
+           xmlns="https://beebloom.local/schema/mission"
+           elementFormDefault="qualified">
+
+  <xs:element name="Mission">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Id" type="xs:unsignedInt"/>
+        <xs:element name="Titulo" type="xs:string" minOccurs="0"/>
+        <xs:element name="Estado" type="xs:string"/>
+        <xs:element name="Precio" type="xs:decimal"/>
+        <xs:element name="Pago">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Estado" type="xs:string"/>
+              <xs:element name="Metodo" type="xs:string" minOccurs="0"/>
+              <xs:element name="Fecha" type="xs:dateTime" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Fechas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Inicio" type="xs:dateTime"/>
+              <xs:element name="Fin" type="xs:dateTime"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Dron">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:unsignedInt"/>
+              <xs:element name="Nombre" type="xs:string"/>
+              <xs:element name="Serial" type="xs:string"/>
+              <xs:element name="Estado" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Parcela">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:unsignedInt"/>
+              <xs:element name="Nombre" type="xs:string"/>
+              <xs:element name="Estado" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Notas" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
