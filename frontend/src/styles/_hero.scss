@@ -1,0 +1,210 @@
+@import "variables";
+
+
+
+.bb-hero {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.bb-hero-shell {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+
+.bb-hero.bb-section {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+.bb-hero-left {
+  flex: 0 0 48%;
+  background: url("../recursos/hero-abejas.png") center/cover no-repeat;
+  border-radius: 0;
+}
+
+
+
+.bb-hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+ 
+  padding: 1.4rem 2.4rem;
+  gap: 1.3rem;
+
+  text-align: center;
+  max-width: 52%;
+}
+
+
+
+.bb-home-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+
+  
+  font-size: clamp(1.8rem, 1.3rem + 1.4vw, 2.4rem);
+  line-height: 1.15;
+
+  color: #4b2e1f;
+  text-align: center;
+
+  max-width: 620px;
+  
+  margin: 0.4rem auto 0.7rem;
+}
+
+
+
+.bb-home-subtitle {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba($bb-dark, 0.65);
+
+  max-width: 620px;
+  margin: 0 auto 0.9rem;
+}
+
+
+
+.bb-hero-cta {
+  display: inline-block;
+  padding: 0.55rem 1.4rem;   
+  border-radius: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+
+.bb-hero-cta--primary,
+.bb-hero-cta--ghost {
+  background: #6D8A39;              
+  color: #fff;
+  padding: 0.65rem 1.6rem;          
+  border-radius: 1.2rem;
+
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+
+  display: inline-flex;              // ✔ centrado perfecto
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+ 
+  box-shadow: 0 6px 0 darken(#6D8A39, 18%);
+  transition: all 0.12s ease-out;
+
+  &:hover {
+    background: lighten(#6D8A39, 4%);
+    cursor: pointer;
+  }
+
+ 
+  &:active {
+    transform: translateY(3px);      
+    box-shadow: 0 3px 0 darken(#6D8A39, 25%);  
+  }
+}
+
+.bb-home-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+
+
+.bb-hero-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 42rem;   
+  margin-top: 1.2rem;
+}
+
+.bb-hero-carousel__viewport {
+  width: 100%;
+  height: 15.5rem;    
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.18),
+    0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bb-hero-carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.92) contrast(1.05) saturate(1.1);
+}
+
+
+.bb-hero-carousel__control {
+  background: #db560e;
+  color: white;
+  border: none;
+  font-size: 1.7rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    background: darken(#db560e, 6%);
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .bb-hero-shell {
+    flex-direction: column;
+  }
+
+  .bb-hero-left {
+    flex: none;
+    height: 200px;
+    border-radius: 0;
+  }
+
+  .bb-hero-right {
+    max-width: 100%;
+    padding: 1.6rem 1.4rem;
+  }
+
+  .bb-home-title {
+    font-size: clamp(1.6rem, 1.1rem + 4vw, 2.2rem);
+    max-width: 22ch;
+  }
+
+  .bb-hero-carousel {
+    max-width: 100%;
+  }
+
+  .bb-hero-carousel__viewport {
+    height: 11rem;   
+  }
+}

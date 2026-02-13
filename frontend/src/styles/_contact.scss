@@ -1,0 +1,16 @@
+@import "variables";
+
+.bb-contact-page {
+  padding: 2rem 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bb-contact-login {
+  max-width: 48rem;
+}
+
+.bb-contact-new-mission {
+  margin-top: 0.5rem;
+}

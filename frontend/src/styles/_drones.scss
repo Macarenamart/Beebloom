@@ -1,0 +1,237 @@
+@import "variables";
+
+
+
+.bb-drones-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Padding contenido para que quepa dentro de la tarjeta (90vh) */
+  padding: 1.8rem 3rem 1.4rem;
+  gap: 1.6rem;
+}
+
+
+
+.bb-drones-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.bb-drones-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: $bb-primary;
+  margin-bottom: 0.6rem;
+}
+
+.bb-drones-intro {
+  font-size: 0.98rem;
+  color: rgba($bb-dark, 0.75);
+  margin: 0;
+}
+
+
+
+.bb-drones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.3rem;
+  width: 100%;
+  max-width: 980px;
+}
+
+.bb-drone-card {
+  background: #ffffff;
+  border-radius: 1.4rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.bb-drone-card__image-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.bb-drone-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.95) contrast(1.04) saturate(1.05);
+}
+
+
+.bb-drone-card__body {
+  padding: 0.9rem 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.bb-drone-card__tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba($bb-dark, 0.6);
+}
+
+.bb-drone-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  color: $bb-dark;
+}
+
+.bb-drone-card__text {
+  font-size: 0.9rem;
+  margin: 0;
+  color: rgba($bb-dark, 0.75);
+}
+
+
+.bb-drones-matching.bb-section {
+  padding: 0;
+  margin-top: 0.2rem;
+}
+
+.bb-drones-matching {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bb-drones-matching__shell {
+  width: 100%;
+  max-width: 980px;
+  background: #fffaf0;
+  border-radius: 1.7rem;
+  padding: 1.1rem 1.6rem 1.3rem;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.09);
+  color: rgba($bb-dark, 0.9);
+}
+
+
+
+.bb-drones-matching__header {
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.bb-drones-matching__eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba($bb-dark, 0.55);
+  margin-bottom: 0.15rem;
+}
+
+.bb-drones-matching__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: $bb-primary;
+  margin: 0 0 0.4rem;
+}
+
+.bb-drones-matching__intro {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+
+
+.bb-drones-matching__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.4rem;
+  row-gap: 0.8rem;
+  margin: 0.9rem 0 0.7rem;
+}
+
+.bb-drones-matching__item {
+  background: rgba(#ffffff, 0.9);
+  border-radius: 1.1rem;
+  padding: 0.7rem 0.9rem 0.75rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.7rem;
+  row-gap: 0.25rem;
+  align-items: flex-start;
+}
+
+.bb-drones-matching__badge {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  background: #db560e;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.15rem;
+}
+
+.bb-drones-matching__item-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.bb-drones-matching__item p {
+  grid-column: 2 / -1;
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+
+
+.bb-drones-matching__foot {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+@media (max-width: 1024px) {
+  .bb-drones-page {
+    padding: 1.6rem 1.7rem 1.3rem;
+  }
+
+  .bb-drones-grid {
+    gap: 1.1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .bb-drones-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bb-drones-matching__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .bb-drones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bb-drones-page {
+    padding: 1.2rem 1.2rem 1.3rem;
+  }
+
+  .bb-drones-matching__shell {
+    padding: 1rem 1rem 1.2rem;
+  }
+}

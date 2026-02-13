@@ -1,0 +1,62 @@
+@import "variables";
+
+// Tarjetas base BeeBloom
+.bb-card {
+  border-radius: 1.2rem;
+  border: 2px solid rgba($bb-dark, 0.06);
+  background-color: #fff;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+  padding: 1.6rem 1.8rem;
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: $bb-dark;
+  }
+
+  &__text {
+    font-size: 0.95rem;
+    color: rgba($bb-dark, 0.8);
+    margin: 0;
+  }
+}
+
+// Tarjetas tipo 
+.bb-card--step {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 2px solid $bb-primary;
+  box-shadow: 4px 4px 0 rgba($bb-primary, 0.4);
+  background-color: $bb-light;
+
+  .bb-card__step {
+    position: absolute;
+    top: 1rem;
+    right: 1.4rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba($bb-dark, 0.4);
+  }
+
+  .bb-card__title {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .bb-card__text {
+    font-size: 0.92rem;
+  }
+}
+
+// Variante 
+.bb-card--accent {
+  background-color: $bb-soft-pink;
+  border-color: $bb-soft-pink;
+  box-shadow: 4px 4px 0 darken($bb-soft-pink, 20%);
+}

@@ -1,0 +1,96 @@
+// src/styles/_navbar.scss
+@import "variables";
+
+
+.bb-navbar {
+  background-color: $bb-light;
+  border-bottom: 2px solid rgba($bb-dark, 0.12);
+  padding: 0.75rem 2.5rem;
+  z-index: 10;
+
+  .navbar-brand {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: $bb-dark;
+    text-decoration: none;
+
+    &:hover {
+      color: $bb-primary;
+    }
+  }
+
+  .nav {
+    gap: 0.75rem;
+  }
+}
+
+
+
+.bb-navbar .nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.55rem 2.1rem;
+  border-radius: 0.9rem;
+
+  background-color: $bb-light;
+  border: 3px solid $bb-primary;
+  color: $bb-dark;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+
+  /* Sombra tipo botón físico */
+  box-shadow: 0 6px 0 darken($bb-primary, 10%);
+  transition: all 0.16s ease-in-out;
+
+  &:hover {
+    background-color: $bb-primary;
+    color: #ffffff;
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 darken($bb-primary, 14%);
+  }
+
+  &:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 darken($bb-primary, 18%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow:
+      0 0 0 4px rgba($bb-primary, 0.18),
+      0 6px 0 darken($bb-primary, 10%);
+  }
+}
+
+
+
+.bb-navbar .nav-link--icon {
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+}
+
+.bb-nav-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
+
+
+.nav-link--active {
+  background-color: $bb-primary !important;
+  color: #ffffff !important;
+  border-color: $bb-primary !important;
+
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 darken($bb-primary, 18%) !important;
+
+  font-weight: 700;
+}

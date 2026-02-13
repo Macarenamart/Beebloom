@@ -1,0 +1,80 @@
+
+
+
+
+//Variables
+@import "variables";
+
+@import "footer";
+
+//Global reset
+body {
+  background-color: $bb-light;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+  color: $bb-dark;
+  line-height: 1.6;
+}
+
+//Secciones principales
+.bb-section {
+  padding: 5rem 0;
+
+  &--light {
+    background-color: $bb-light;
+  }
+
+  &--warm {
+    background-color: $bb-warm;
+    color: white;
+  }
+
+  &--accent {
+    background-color: $bb-soft-pink;
+    color: $bb-dark;
+  }
+
+  &--highlight {
+    background-color: $bb-highlight;
+  }
+}
+
+//Botones BeeBloom
+.btn-bb {
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &--primary {
+    background-color: $bb-primary;
+    color: white;
+
+    &:hover {
+      background-color: $bb-warm;
+    }
+  }
+
+  &--secondary {
+    background-color: $bb-secondary;
+    color: white;
+
+    &:hover {
+      background-color: darken($bb-secondary, 8%);
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 2px solid $bb-primary;
+    color: $bb-primary;
+
+    &:hover {
+      background-color: $bb-primary;
+      color: white;
+    }
+  }
+}

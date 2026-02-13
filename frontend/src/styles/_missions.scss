@@ -1,0 +1,168 @@
+@import "variables";
+
+
+.bb-missions-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem 3rem 1.6rem;
+  gap: 1.6rem;
+}
+
+
+.bb-missions-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.bb-missions-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: $bb-primary;
+  margin-bottom: 0.6rem;
+}
+
+.bb-missions-intro {
+  font-size: 0.98rem;
+  color: rgba($bb-dark, 0.75);
+  margin: 0;
+}
+
+
+
+.bb-missions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+  width: 100%;
+  max-width: 980px;
+}
+
+.bb-mission-card {
+  background: #ffffff;
+  border-radius: 1.2rem;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  padding: 1rem 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.bb-mission-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: $bb-dark;
+}
+
+.bb-mission-card__subtitle {
+  font-size: 0.9rem;
+  margin: 0 0 0.15rem;
+  color: rgba($bb-dark, 0.7);
+}
+
+.bb-mission-card__list {
+  margin: 0.1rem 0 0.4rem 1.1rem;
+  padding-left: 0.7rem;
+  font-size: 0.9rem;
+  color: rgba($bb-dark, 0.8);
+
+  li {
+    margin-bottom: 0.15rem;
+  }
+}
+
+.bb-mission-card__price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
+  color: $bb-primary;
+}
+
+
+
+.bb-missions-flow {
+  max-width: 980px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bb-missions-flow__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: $bb-primary;
+}
+
+.bb-missions-flow__steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.bb-missions-step {
+  flex: 1;
+  background: #fef8f3;
+  border-radius: 1rem;
+  padding: 0.7rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.bb-missions-step__badge {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  background: $bb-primary;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.bb-missions-step__text {
+  margin: 0;
+  text-align: left;
+  color: rgba($bb-dark, 0.85);
+}
+
+
+
+@media (max-width: 1024px) {
+  .bb-missions-page {
+    padding: 1.6rem 1.6rem 1.4rem;
+  }
+
+  .bb-missions-grid {
+    gap: 1rem;
+  }
+
+  .bb-missions-flow__steps {
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .bb-missions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .bb-missions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bb-missions-flow__steps {
+    flex-direction: column;
+  }
+}

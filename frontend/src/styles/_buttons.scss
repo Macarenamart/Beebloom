@@ -1,0 +1,116 @@
+@import "variables";
+
+
+.btn-primary {
+  // Forma y tipografía
+  border: 2px solid $bb-dark;
+  border-radius: 0.5rem;
+  background-color: #fff; // blanco limpio, estilo papel
+  color: $bb-dark;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  padding: 0.7rem 1.6rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-block;
+  position: relative;
+  box-shadow: 4px 4px 0 $bb-dark; // 🧱 sombra sólida tipo papel recortado
+
+  
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 $bb-dark;
+  }
+
+  
+  &:active {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 $bb-dark;
+  }
+
+  
+  &:focus {
+    outline: 2px dashed $bb-primary;
+    outline-offset: 4px;
+  }
+}
+
+
+
+.btn-orange {
+  background-color: $bb-primary;
+  color: #fff;
+  border-color: darken($bb-primary, 15%);
+  box-shadow: 4px 4px 0 darken($bb-primary, 25%);
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 darken($bb-primary, 25%);
+  }
+
+  &:active {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 darken($bb-primary, 25%);
+  }
+}
+
+
+
+.btn-green {
+  background-color: $bb-soft-green;
+  color: $bb-dark;
+  border-color: darken($bb-soft-green, 20%);
+  box-shadow: 4px 4px 0 darken($bb-soft-green, 30%);
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 darken($bb-soft-green, 30%);
+  }
+
+  &:active {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 darken($bb-soft-green, 30%);
+  }
+}
+
+
+
+.bb-btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px; // forma de pastilla
+
+  background: #ffffff;
+  color: $bb-dark;
+
+  border: 2px solid rgba($bb-dark, 0.25);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease,
+    transform 0.15s ease;
+
+  &:hover {
+    background: $bb-primary;
+    color: #ffffff;
+    border-color: $bb-primary;
+    cursor: pointer;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $bb-primary;
+    outline-offset: 3px;
+  }
+}

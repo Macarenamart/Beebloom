@@ -1,0 +1,17 @@
+
+
+.bb-footer {
+  background-color: $bb-dark;
+  color: #fff;
+  padding: 2rem 0;
+  font-size: 0.85rem;
+}
+
+.bb-footer a {
+  color: lighten($bb-highlight, 10%);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
