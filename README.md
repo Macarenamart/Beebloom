@@ -4,6 +4,9 @@
 
 https://beebloom.vercel.app
 
+Note: The backend is not deployed in production.
+The project can be fully tested by running the backend locally.
+
 ### Drone-Assisted Pollination Management Platform
 
 > Full-Stack web application designed to manage and optimize pollination operations through geospatial visualization and structured data workflows.
