@@ -1,5 +1,9 @@
 # 🐝 BeeBloom
 
+## Live Demo
+
+https://beebloom.vercel.app
+
 ### Drone-Assisted Pollination Management Platform
 
 > Full-Stack web application designed to manage and optimize pollination operations through geospatial visualization and structured data workflows.
@@ -122,7 +126,7 @@ This project emphasizes:
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 Macarena Mart  
 Full Stack Developer  
