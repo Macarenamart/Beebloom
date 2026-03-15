@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend
 - React
@@ -52,18 +52,18 @@ Relational Database
 
 ---
 
-## 🌍 Core Features
+## Core Features
 
-- 🗺 Interactive map visualization (Leaflet integration)
-- 📍 Geolocation-based entity management
-- 🗂 CRUD operations for operational workflows
-- 📊 Structured data exports
-- 🔐 Secure environment configuration
-- 🧩 Modular and extensible system design
+- Interactive map visualization (Leaflet integration)
+- Geolocation-based entity management
+- CRUD operations for operational workflows
+- Structured data exports
+- Secure environment configuration
+- Modular and extensible system design
 
 ---
 
-## ⚙️ Local Setup
+## Local Setup
 
 ```
 git clone git@github.com:Macarenamart/Beebloom.git
@@ -98,7 +98,7 @@ JWT_SECRET=
 
 ---
 
-## 📈 Roadmap
+## Roadmap
 
 - Deployment to production (Vercel + Render / Railway)
 - Role-based access control
@@ -109,7 +109,7 @@ JWT_SECRET=
 
 ---
 
-## 🛠 Engineering Focus
+## Engineering Focus
 
 This project emphasizes:
 
